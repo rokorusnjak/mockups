@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="sl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gostilna Makorič – Orehovlje</title><meta name="description" content="Domače jedi kraško-vipavskega okolja s pridihom furlanske kuhinje – v vasici Orehovlje pri Mirnu."><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>:root{--bg:#fbf3e6;--surface:#f2e2c8;--ink:#3a2414;--muted:#7a5f45;--accent:#5b6b2f;--aink:#fff;--line:rgba(0,0,0,.1);--hbg:rgba(251,243,230,.92);--hink:#3a2414;--fbg:#3a2414;--fink:#eee;--heroink:#fff;--herobg:#222;--fd:'Fraunces',serif;--fb:'Work Sans',sans-serif;--r:18px;--br:999px;--rimg:24px;--hw:800;--hls:0;--htf:none;--ov:linear-gradient(180deg,rgba(58,36,20,.3),rgba(58,36,20,.85));--accent2:#fcd}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.6;font-size:16px;overflow-x:hidden;padding-bottom:76px}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--fd);font-weight:var(--hw);letter-spacing:var(--hls);text-transform:var(--htf);line-height:1.12}
+h1{font-size:clamp(2.1rem,8.6vw,4.2rem)}
+h2{font-size:clamp(1.7rem,6.2vw,2.6rem);margin-bottom:12px}
+h3{font-size:1.2rem}
+.eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px;display:block}
+section{padding:60px 0}
+.lead{color:var(--muted);max-width:60ch}
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:var(--hbg);color:var(--hink);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{font-family:var(--fd);font-weight:var(--hw);font-size:1.05rem;text-transform:var(--htf);letter-spacing:var(--hls);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:56vw}
+nav.menu{display:none}
+.burger{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:46px;height:46px;border:1px solid var(--line);border-radius:12px;background:transparent;cursor:pointer;padding:0 12px;margin-left:auto}
+.burger span{display:block;height:2px;background:currentColor;border-radius:2px;transition:.2s}
+header.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+header.open .burger span:nth-child(2){opacity:0}
+header.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+header.top nav.menu{position:absolute;left:0;right:0;top:100%;background:var(--hbg);border-bottom:1px solid var(--line);padding:6px 20px 16px;display:none;flex-direction:column;backdrop-filter:blur(10px)}
+header.open nav.menu{display:flex}
+header.top nav.menu a{margin:0;padding:14px 4px;border-bottom:1px solid var(--line);font-size:1.05rem;opacity:1}
+header.top .hcall{display:none}
+.ctas{display:grid;gap:10px;margin-top:22px}
+.contact-grid.single{grid-template-columns:1fr!important;max-width:640px}
+nav.menu a{text-decoration:none;font-size:.92rem;margin-left:24px;opacity:.85}
+nav.menu a:hover{opacity:1;color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:var(--br);background:var(--accent);color:var(--aink);font-weight:700;text-decoration:none;font-size:1rem;border:2px solid var(--accent);transition:.2s;font-family:var(--fb);cursor:pointer;text-align:center}
+.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+.btn.sm{padding:9px 18px;font-size:.9rem}
+.ph{outline:2px dashed var(--accent);outline-offset:3px}
+/* hero */
+.hero{position:relative;color:var(--heroink)}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero p.sub{font-size:1.1rem;max-width:46ch;margin-top:16px;opacity:.92}
+.hero-split .badge,.hero-center .badge{background:rgba(127,127,127,.12);border-color:rgba(127,127,127,.3)}
+.badge{display:inline-flex;gap:8px;align-items:center;margin-top:20px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);font-size:.9rem;backdrop-filter:blur(4px)}
+.hero-overlay{min-height:600px;display:flex;align-items:flex-end;background-size:cover;background-position:center}
+.hero-overlay::before{content:"";position:absolute;inset:0;background:var(--ov)}
+.hero-overlay .wrap{position:relative;padding-top:90px;padding-bottom:56px}
+.hero-split{background:var(--herobg)}
+.hero-split .wrap{display:grid;gap:30px;padding-top:36px;padding-bottom:50px;align-items:center}
+.hero-split .pic{border-radius:var(--rimg);overflow:hidden;aspect-ratio:4/3.4;background-size:cover;background-position:center;box-shadow:0 24px 50px -20px rgba(0,0,0,.4)}
+.hero-center{background:var(--herobg);text-align:center}
+.hero-center .wrap{padding-top:54px;padding-bottom:0}
+.hero-center p.sub{margin-left:auto;margin-right:auto}
+.hero-center .cta{justify-content:center}
+.hero-center .arch{margin:44px auto 0;max-width:760px;height:300px;border-radius:var(--rimg) var(--rimg) 0 0;background-size:cover;background-position:center}
+.infobar{background:var(--accent);color:var(--aink)}
+.infobar .wrap{display:grid;gap:4px;padding-top:16px;padding-bottom:16px;font-size:.95rem;font-weight:600}
+.infobar span{display:flex;gap:8px;align-items:center}
+/* services */
+.cards{display:grid;gap:16px;margin-top:28px}
+.card{background:var(--surface);padding:26px;border-radius:var(--r);border:1px solid var(--line);position:relative}
+.card .n{font-family:var(--fd);font-size:2rem;color:var(--accent);line-height:1;display:block;margin-bottom:12px;opacity:.9}
+.card p{color:var(--muted);margin-top:6px;font-size:.96rem}
+.note{font-size:.82rem;color:var(--muted);margin-top:18px;font-style:italic}
+.pricebox{margin-top:36px;background:var(--surface);border:1px dashed var(--accent);border-radius:var(--r);padding:22px}
+.pricebox h3{margin-bottom:10px}
+.pricebox li{list-style:none;display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.96rem}
+.pricebox li:last-of-type{border:0}
+.pricebox li b{color:var(--muted);font-weight:500;white-space:nowrap}
+/* about */
+.about{display:grid;gap:30px;align-items:center}
+.about .pic{border-radius:var(--rimg);overflow:hidden;aspect-ratio:4/3.2;background-size:cover;background-position:center}
+.about p{color:var(--muted);margin-top:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chip{padding:8px 16px;border-radius:var(--br);background:var(--surface);border:1px solid var(--line);font-size:.88rem;font-weight:600}
+/* gallery */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px}
+.gal div{aspect-ratio:1/1;border-radius:var(--r);background-size:cover;background-position:center;background-color:var(--surface)}
+.gal div:first-child{grid-column:span 2;aspect-ratio:16/9}
+/* hours */
+.two{display:grid;gap:24px}
+.hours{background:var(--surface);border-radius:var(--r);padding:22px;border:1px solid var(--line)}
+.hours table{width:100%;border-collapse:collapse;margin-top:6px}
+.hours td{padding:11px 0;border-bottom:1px solid var(--line);font-size:.97rem}
+.hours tr:last-child td{border:0}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours tr.today td{color:var(--accent);font-weight:700}
+.hours tr.today td:first-child::after{content:" · " attr(data-t);font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}
+.hours .closed{color:var(--muted);font-weight:500}
+.mapbox{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:320px;background:var(--surface)}
+.mapbox iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+.addr{margin:14px 0 18px;font-size:1.05rem}
+.addr small{display:block;color:var(--muted);font-size:.88rem}
+/* contact */
+.contact-grid{display:grid;gap:26px}
+.ctl{list-style:none;display:grid;gap:14px;margin-top:20px}
+.ctl li{display:flex;gap:14px;align-items:flex-start}
+.ctl .ic{flex:none;width:42px;height:42px;border-radius:var(--br);background:var(--accent);color:var(--aink);display:grid;place-items:center;font-weight:800;font-size:1rem}
+.ctl small{display:block;color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.1em}
+.ctl a{text-decoration:none;font-weight:600;word-break:break-word}
+form.mock{background:var(--surface);padding:24px;border-radius:var(--r);border:1px solid var(--line);display:grid;gap:12px}
+form.mock input,form.mock textarea{width:100%;padding:14px 16px;border-radius:calc(var(--r)/2.2);border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+form.mock textarea{min-height:110px;resize:vertical}
+form.mock .demo{font-size:.78rem;color:var(--muted)}
+/* footer */
+footer{background:var(--fbg);color:var(--fink);padding:34px 0;font-size:.9rem;text-align:center}
+footer b{display:block;font-size:1rem;margin-bottom:4px}
+footer small{opacity:.7;display:block;max-width:60ch;margin:6px auto 0}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 14px;background:var(--hbg);border-top:1px solid var(--line);display:flex;gap:10px}
+.sticky .btn{flex:1;padding:13px 10px}
+@media(min-width:760px){
+ body{padding-bottom:0}
+ .sticky{display:none}
+ .burger{display:none}
+ header.top nav.menu{position:static;display:block;background:none;border:0;padding:0;margin-left:auto;backdrop-filter:none}
+ header.top nav.menu a{display:inline;padding:0;border:0;margin-left:24px;font-size:.92rem;opacity:.85}
+ header.top .hcall{display:inline-flex;margin-left:24px}
+ .ctas{grid-template-columns:repeat(2,auto);justify-content:start}
+ header.top .wrap{height:72px}
+ .hero-split .wrap{grid-template-columns:1.05fr .95fr;gap:56px;padding-top:70px;padding-bottom:80px}
+ .hero-split.rev .pic{order:-1}
+ .hero-overlay{min-height:700px}
+ .hero-center .arch{height:420px}
+ .infobar .wrap{grid-template-columns:repeat(3,auto);justify-content:space-between}
+ .cards{grid-template-columns:repeat(3,1fr)}
+ .cards.c2{grid-template-columns:repeat(2,1fr)}
+ .about{grid-template-columns:1fr 1fr;gap:60px}
+ .about.rev .pic{order:-1}
+ .gal{grid-template-columns:repeat(4,1fr);gap:14px}
+ .gal div:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+ .gal div{aspect-ratio:1/1}
+ .two{grid-template-columns:1fr 1.2fr;gap:36px}
+ .contact-grid{grid-template-columns:1fr 1fr;gap:50px}
+ section{padding:92px 0}
+}
+
+body{background-image:radial-gradient(rgba(120,80,40,.06) 1px,transparent 1px);background-size:18px 18px}
+.card{border:2px dashed var(--accent);background:var(--surface);border-radius:20px}
+.about .pic{border-radius:24px;transform:rotate(-1.5deg);box-shadow:0 18px 40px -18px rgba(0,0,0,.4);border:8px solid #fff}
+.gal div{border:6px solid #fff;border-radius:6px;box-shadow:0 10px 26px -14px rgba(0,0,0,.4)}
+.gal div:nth-child(odd){transform:rotate(-1deg)}.gal div:nth-child(even){transform:rotate(1deg)}
+.btn{border-radius:14px}
+section.alt{background:var(--surface)}
+.stamp{display:inline-block;border:2px solid var(--accent);color:var(--accent);padding:6px 14px;border-radius:8px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;transform:rotate(-3deg);margin-bottom:16px}
+.hero-overlay .eyebrow{color:#fff;opacity:.9}.hero-overlay .stamp{color:#fff;border-color:#fff}</style></head>
+<body class="cat-cafe" id="top">
+<header class="top"><div class="wrap"><a class="logo" href="#top">Gostilna Makorič</a><button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button><nav class="menu" id="menu"><a href="#usluge">Storitve</a><a href="#onama">O nas</a><a href="#galerija">Galerija</a><a href="#radno-vrijeme">Delovni čas</a><a href="#kontakt">Kontakt</a></nav><a class="btn sm hcall" href="tel:+38653054394">Pokliči</a></div></header>
+<main>
+<section class="hero hero-overlay" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=70');padding:0"><div class="wrap"><span class="eyebrow">Gostilna · Orehovlje · Kras in Vipava</span><h1>Gostilna Makorič</h1><p class="sub">Domače jedi kraško-vipavskega okolja s pridihom furlanske kuhinje – v vasici Orehovlje pri Mirnu.</p><div class="cta"><a class="btn" href="tel:+38653054394">Pokličite zdaj · +386 5 305 43 94</a><a class="btn ghost" href="#kontakt">Povpraševanje</a></div></div></section><div class="infobar"><div class="wrap"><span>📍 Orehovlje 31, 5291 Miren</span><span>🕒 Sre – Pet 10–15 h in 18–22 h · Sob – Ned 11–22 h</span><span>📞 +386 5 305 43 94</span></div></div>
+<section id="usluge"><div class="wrap"><span class="eyebrow">Gostilna Makorič</span><h2>Ponudba</h2><p class="lead">Že desetletja domača kuhinja v Orehovljah – za kosilo, večerjo ali praznovanje.</p><div class="cards"><div class="card"><span class="n">01</span><h3>Domače jedi</h3><p>Jedi, značilne za kraško-vipavski okoliš, pripravljene na sodoben način.</p></div><div class="card"><span class="n">02</span><h3>Furlanski pridih</h3><p>Jedi s pridihom furlanske kuhinje.</p></div><div class="card"><span class="n">03</span><h3>Špargljevi dnevi</h3><p>Vsako leto pripravljamo »Špargljeve dneve«.</p></div><div class="card"><span class="n">04</span><h3>Za skupine</h3><p>Sprejemamo tudi skupine.</p></div><div class="card"><span class="n">05</span><h3>Dogodki in poroke</h3><p>Organizacija dogodkov in porok.</p></div><div class="card"><span class="n">06</span><h3>Hišni ljubljenčki</h3><p>Hišni ljubljenčki so dobrodošli.</p></div></div><p class="note">Opis po Visit Kras (visitkras.info). Jedilnik in cene uskladimo z vašo dejansko ponudbo.</p><div class="pricebox"><h3>Primer cenika</h3><ul style="margin-top:6px"><li><span>Kosilo (primer)</span><b>— € (primer)</b></li><li><span>Degustacijski meni (primer)</span><b>— € (primer)</b></li><li><span>Meni za skupine (primer)</span><b>— € (primer)</b></li><li><span>Poročni meni (primer)</span><b>— € (primer)</b></li></ul><p class="note">Primer cenika – cene po dogovoru. Vrednosti, označene s »primer«, niso dejanske cene.</p></div></div></section>
+<section id="onama" class="alt"><div class="wrap about"><div><span class="eyebrow">O nas</span><h2>Desetletja domače kuhinje</h2><p>V vasici Orehovlje že desetletja na sodoben način pripravljamo domače jedi, značilne za kraško-vipavski okoliš, s pridihom furlanske kuhinje.</p><p>Organiziramo dogodke in poroke, sprejemamo skupine, hišni ljubljenčki pa so dobrodošli.</p><div class="chips"><span class="chip">Orehovlje 31</span><span class="chip">Sre – Ned</span><span class="chip">Dogodki in poroke</span><span class="chip">Špargljevi dnevi</span></div></div><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=1000&q=70')"></div></div></section>
+<section id="galerija"><div class="wrap"><span class="eyebrow">Galerija</span><h2>Galerija</h2><div class="gal"><div role="img" aria-label="ilustracija" style="background-image:url('https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=900&q=70')"></div><div role="img" aria-label="ilustracija" style="background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=70')"></div><div role="img" aria-label="ilustracija" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=70')"></div><div role="img" aria-label="ilustracija" style="background-image:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=70')"></div><div role="img" aria-label="ilustracija" style="background-image:url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=900&q=70')"></div></div><p class="note">Ilustrativne fotografije (Unsplash, brezplačna licenca) – niso fotografije tega salona. Tukaj bodo vaše lastne fotografije.</p></div></section>
+<section id="radno-vrijeme" class="alt"><div class="wrap"><span class="eyebrow">Delovni čas · Kje smo</span><h2>Kje smo</h2><div class="two"><div><div class="hours"><h3>Delovni čas</h3><table><tr data-days="0,1"><td data-t="danes">Ponedeljek, Torek</td><td><span class="closed">Zaprto</span></td></tr>
+<tr data-days="2,3,4"><td data-t="danes">Sreda – Petek</td><td>10–15 h · 18–22 h</td></tr>
+<tr data-days="5,6"><td data-t="danes">Sobota, Nedelja</td><td>11–22 h</td></tr></table><p class="note">Odpiralni čas po visitkras.info – ob večjih praznikih odprto. Pred objavo preveriti.</p></div><p class="addr" style="margin-top:22px"><b>Orehovlje 31, 5291 Miren</b></p><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Orehovlje+31%2C+5291+Miren%2C+Slovenija" target="_blank" rel="noopener">Navodila za pot</a></div><div class="mapbox"><iframe src="https://maps.google.com/maps?q=Orehovlje+31%2C+5291+Miren%2C+Slovenija&hl=sl&z=16&output=embed" title="Google Maps" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div></div></div></section>
+<section id="kontakt"><div class="wrap contact-grid"><div><span class="eyebrow">Kontakt</span><h2>Kontakt</h2><p class="lead">Pokličite za rezervacijo ali pošljite povpraševanje za dogodek.</p><div class="ctas"><a class="btn" href="tel:+38653054394">Pokličite zdaj · +386 5 305 43 94</a><a class="btn ghost" href="mailto:gostilna.makoric@siol.net">Pošljite e-pošto</a><a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=Orehovlje+31%2C+5291+Miren%2C+Slovenija" target="_blank" rel="noopener">Navodila za pot</a></div><ul class="ctl"><li><span class="ic">☎</span><div><small>Telefon</small><a href="tel:+38653054394">+386 5 305 43 94</a></div></li><li><span class="ic">@</span><div><small>E-pošta</small><a href="mailto:gostilna.makoric@siol.net">gostilna.makoric@siol.net</a></div></li><li><span class="ic">📍</span><div><small>Naslov</small><a href="https://www.google.com/maps/dir/?api=1&destination=Orehovlje+31%2C+5291+Miren%2C+Slovenija" target="_blank" rel="noopener">Orehovlje 31, 5291 Miren</a></div></li></ul><p class="note" style="margin-top:14px">Mobilni: <a href="tel:+38641535333">+386 41 535 333</a> · <a href="https://wa.me/38641535333" target="_blank" rel="noopener">WhatsApp</a><br>E-pošta: <a href="mailto:gostilnamakoric.orehovlje@gmail.com">gostilnamakoric.orehovlje@gmail.com</a></p></div><form class="mock" id="upit" action="mailto:gostilna.makoric@siol.net" method="get" data-to="gostilna.makoric@siol.net" data-subject="Povpraševanje s spletne strani – Gostilna Makorič"><input type="text" name="n1" placeholder="Vaše ime" aria-label="Vaše ime"><input type="text" name="n2" placeholder="Telefon ali e-pošta" aria-label="Telefon ali e-pošta"><textarea name="n3" placeholder="Sporočilo" aria-label="Sporočilo"></textarea><button class="btn" type="submit">Pošljite povpraševanje</button><span class="demo">Pošiljanje odpre vaš e-poštni program s sporočilom za gostilna.makoric@siol.net.</span></form></div></section>
+</main>
+<footer><div class="wrap"><b>Predlog oblikovanja – Roko Rusnjak</b><small>To je brezplačen osnutek spletne strani. Vsebina, fotografije in cene so primeri, dokler jih ne potrdite.</small></div></footer>
+<div class="sticky"><a class="btn" href="tel:+38653054394">Pokliči</a><a class="btn ghost" href="#kontakt">Povpraševanje</a></div>
+<script>(function(){
+var d=(new Date().getDay()+6)%7;document.querySelectorAll(".hours tr[data-days]").forEach(function(r){if((","+r.dataset.days+",").indexOf(","+d+",")>-1)r.classList.add("today")});
+var h=document.querySelector("header.top"),b=h.querySelector(".burger"),m=h.querySelector("nav.menu");
+function setOpen(o){h.classList.toggle("open",o);b.setAttribute("aria-expanded",o?"true":"false")}
+b.addEventListener("click",function(){setOpen(!h.classList.contains("open"))});
+m.addEventListener("click",function(e){if(e.target.tagName==="A")setOpen(false)});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")setOpen(false)});
+document.addEventListener("click",function(e){if(!h.contains(e.target))setOpen(false)});
+window.addEventListener("resize",function(){if(window.innerWidth>=760)setOpen(false)});
+window.buildMailto=function(f){var lines=[];f.querySelectorAll("input,textarea").forEach(function(i){if(i.value.trim())lines.push((i.getAttribute("aria-label")||i.placeholder||"")+": "+i.value.trim())});
+return "mailto:"+f.dataset.to+"?subject="+encodeURIComponent(f.dataset.subject)+"&body="+encodeURIComponent(lines.join("\n"))};
+var f=document.getElementById("upit");if(f)f.addEventListener("submit",function(e){e.preventDefault();window.location.href=window.buildMailto(f)});
+})()</script>
+</body></html>
